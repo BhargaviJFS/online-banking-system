@@ -3,9 +3,9 @@ This project provide frontend (HTML,CSS, AngularJS) and backend (PHP, MYSQL)  fo
  The files are uploaded  in master branch( so please find in master).
  Download the Zip folder of project.
  Extract the files and import bankdb.sql in your phpMyAdmin.
- Place the extracted folder in your xampp (i.e C://xampp/htdocs/online-banking-system)
- Start apache and mysql servers in xampp
- Goto browser and type: http://localhost/online-banking-system/frontend/
+ Place the extracted folder in your xampp (i.e C://xampp/htdocs/online-banking-system).
+ Start apache and mysql servers in xampp.
+ Goto browser and type: http://localhost/online-banking-system/frontend/.
  Now you can access the application.
 
  How it Works?
