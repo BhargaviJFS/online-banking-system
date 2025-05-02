@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="bankApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Banking System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/authController.js"></script>
+    <script src="controllers/dashboardController.js"></script>
+    <script src="controllers/balanceController.js"></script>
+    <script src="controllers/transferController.js"></script>
+    <script src="controllers/transactionsController.js"></script>
+    <script src="controllers/accountController.js"></script>
+    <script src="controllers/profileController.js"></script>
+    <script src="controllers/resetPasswordController.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div ng-view></div>
+    </div>
+</body>
+</html>

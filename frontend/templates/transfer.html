@@ -1,0 +1,9 @@
+<h4><a href="#!/dashboard" style="text-decoration:none;" > << Back  </a> </h4>
+<h2>Transfer Money</h2>
+<form ng-submit="submitTransfer()">
+    <input type="text" ng-model="transfer.to_account" placeholder="Recipient Account Number" required>
+    <input type="number" ng-model="transfer.amount" placeholder="Amount" min="1" required>
+    <button type="submit">Transfer</button>
+</form>
+<p class="success" ng-if="success">{{success}}</p>
+<p class="error" ng-if="error">{{error}}</p>

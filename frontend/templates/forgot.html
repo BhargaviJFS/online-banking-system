@@ -1,0 +1,7 @@
+<h2>Forgot Password</h2>
+<form ng-submit="forgotPassword()">
+    <input type="email" ng-model="user.email" placeholder="Enter your email" required>
+    <button type="submit">Send Reset Link</button>
+    <p class="info" ng-if="info">{{info}}</p>
+    <p class="error" ng-if="error">{{error}}</p>
+</form>

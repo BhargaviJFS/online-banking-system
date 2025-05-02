@@ -1,0 +1,6 @@
+<h4><a href="#!/dashboard" style="text-decoration:none;" > << Back  </a> </h4>
+<h2>Your Balance</h2>
+<div ng-if="balance !== null">
+    <p><strong>Current Balance:</strong> ₹{{balance}}</p>
+</div>
+<p class="error" ng-if="error">{{error}}</p>

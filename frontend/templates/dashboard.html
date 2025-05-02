@@ -1,0 +1,36 @@
+<div class="navbar" >
+ <a href="#!/dashboard">Dashboard</a>
+
+  <div style="background-color:#90EE90; width:100%; height:60px; border-radius:20px; text-align:center;float:right;margin-bottom:20px;" class="op" ><h3>
+   <a href="#!/balance" >Check Balance</a> </h3></div>
+
+  <div style="background-color:#90EE90; width:100%; height:60px; border-radius:20px; text-align:center;float:right;margin-bottom:20px;" class="op" ><h3>
+    <a href="#!/transfer">Transfer Money</a></h3></div>
+
+  <div style="background-color:#90EE90; width:100%; height:60px; border-radius:20px; text-align:center;float:right;margin-bottom:20px;" class="op" ><h3>
+    <a href="#!/transactions">Transaction History</a></h3></div>
+
+  <div style="background-color:#90EE90; width:100%; height:60px; border-radius:20px; text-align:center;float:right;margin-bottom:20px;" class="op" ><h3>
+    <a href="#!/account">Account Details </a> </h3></div>
+
+  <div style="background-color:#90EE90; width:100%; height:60px; border-radius:20px; text-align:center;float:right;margin-bottom:20px;" class="op"><h3>
+    <a href="#!/profile">Edit Profile</a></h3></div>
+
+  <div style="background-color:#90EE90; width:100%; height:60px; border-radius:20px; text-align:center;float:right;margin-bottom:20px;" class="op"><h3>
+    <a href="" ng-click="logout()">Logout</a></h3></div>
+
+</div>
+
+<div class="dashboard-section" style="border:1px solid black; text-align:center;background-color:#B0C4DE; " >
+    <h2>Welcome, {{dashboard.user.name}}</h2>
+    <p>Your last login: {{dashboard.user.lastLogin}}</p>
+    <p><strong>Account Number:</strong> {{dashboard.account.account_number}}</p>
+    <p><strong>Balance:</strong> ₹{{dashboard.account.balance}}</p>
+    <h3>Recent Transactions</h3>
+    <ul>
+        <li ng-repeat="txn in dashboard.transactions">
+            {{txn.date}} - {{txn.type | uppercase}} - ₹{{txn.amount}}
+        </li>
+    </ul>
+</div>
+<p class="error" ng-if="error">{{error}}</p>

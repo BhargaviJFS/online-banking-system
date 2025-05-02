@@ -1,0 +1,8 @@
+<h4><a href="#!/dashboard" style="text-decoration:none;" > << Back  </a> </h4>
+
+<h2 style="text-align:center;" > Account Details </h2>
+<div ng-if="account.account_number">
+    <p><strong>Account Number:</strong> {{account.account_number}}</p>
+    <p><strong>Balance:</strong> ₹{{account.balance}}</p>
+</div>
+<p class="error" ng-if="error">{{error}}</p>
